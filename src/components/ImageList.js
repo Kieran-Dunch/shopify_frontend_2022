@@ -1,5 +1,4 @@
 
-import { useEffect } from "react"
 import { useFetch } from "../hooks/UseFetch";
 
 // styles
@@ -13,11 +12,13 @@ export default function ImageList() {
      <div>
       <h2>Here's where our image list will be:</h2>
       <ul>
-        <li>
-          { images && <img src={images.url} alt={images.title} />}
+        { images && images.map(image => (
+        <li key={image.date}>
+          <img src={image.url} alt={image.title} />
+          <h3>{image.title}</h3>
+          <p>{image.explanation}</p>
         </li>
-        <li>Image two</li>
-        <li>Image three</li>
+        ))}
       </ul>
     </div>
   )
