@@ -9,17 +9,22 @@ export default function ImageList() {
     console.log(images);
 
    return (
-     <div>
-      <h2>Here's where our image list will be:</h2>
-      <ul>
+     <>
+      { isPending && <div className="image-pending">Pending...</div>}
+      <ul className="image-list">
         { images && images.map(image => (
         <li key={image.date}>
+          <div className="card-image">
           <img src={image.url} alt={image.title} />
-          <h3>{image.title}</h3>
-          <p>{image.explanation}</p>
+            <div className="card-image-info">
+              <h3>{image.title}</h3>
+              <p>Image taken on {image.date}</p>
+              <p>{image.explanation}</p>
+            </div>
+          </div>
         </li>
         ))}
       </ul>
-    </div>
+    </>
   )
 }
