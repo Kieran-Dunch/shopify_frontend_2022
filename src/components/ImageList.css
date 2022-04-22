@@ -14,7 +14,7 @@
 }
 
 .card-image h3 {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -46,12 +46,27 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
+.card-title-like {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
+}
+
+
 .like {
+  font-size: 24px;
   padding: 0;
+  margin: 10px;
   border: none;
   background: none;
 }
 
 .like:hover {
-  color: red;
+  color: #960000;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.liked {
+  color: #960000;
 }
