@@ -2,8 +2,8 @@
   overflow: hidden;
   background: #f4f4f4;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  margin: 50px;
-  max-width: 100%;
+  margin: 50px auto;
+  max-width: 30%;
   border-radius: 10px;
 }
 
@@ -21,7 +21,7 @@
 .image-list {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .card-image p {
