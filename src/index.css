@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/hubble_friday_04152016.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 code {

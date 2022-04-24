@@ -37,8 +37,8 @@ export default function ImageList() {
                   <FontAwesomeIcon icon={faHeart} />
                 </button>
               </div>
-              <p>Image taken on {image.date}</p>
               <p>{image.explanation}</p>
+              <p className="time-text">Image taken on {image.date}</p>
             </div>
           </div>
         </li>

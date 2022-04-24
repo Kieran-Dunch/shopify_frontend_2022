@@ -1,4 +1,3 @@
-
 // styles
 import './Footer.css'
 
