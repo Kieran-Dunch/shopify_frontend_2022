@@ -15,7 +15,7 @@ export const useLogin = () => {
     // sign the user in
     try {
       const response = await projectAuth.signInWithEmailAndPassword(email, password)
-      // dispatch login action to authContext
+      // dispatch login action to UserContext
       dispatch({ type: 'LOGIN', payload: response.user })
 
       // update state
