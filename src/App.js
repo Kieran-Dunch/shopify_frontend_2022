@@ -12,7 +12,7 @@ import { UserContext } from './context/UserContext';
 
 function App() {
   // context
-  const { authIsReady, user } = UserContext()
+  // const { authIsReady, user } = UserContext()
   return (
     <div className="App">
       <Banner/>

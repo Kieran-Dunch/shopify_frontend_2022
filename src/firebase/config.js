@@ -1,9 +1,7 @@
 // database imports
-import firebase from 'firebase/app'
-// import authorisation
-import 'firebase/auth'
-// import liked photo & user storage
-import 'firebase/firestore'
+import firebase from 'firebase/compat/app'
+import 'firebase/compat/auth'
+import 'firebase/compat/firestore'
 
 const firebaseConfig = {
   apiKey: "AIzaSyAiuGPdmh7yP5c4Y3L9BdjpDZqpbCSeYG8",
