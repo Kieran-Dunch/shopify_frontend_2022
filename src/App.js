@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 
 // components
 import Footer from './components/Footer.js'
+import Navbar from './components/Navbar';
 
 // pages
 import  Gallery  from "./pages/Gallery";
@@ -14,20 +15,20 @@ import Home from "./pages/Home"
 function App() {
   return (
     <div className="App">
-
       <BrowserRouter>
+      <Navbar />
         <Switch>
           <Route exact path="/">
-            <Home/>
+            <Home />
           </Route>
           <Route path="/gallery">
-            <Gallery/>
+            <Gallery />
           </Route>
           <Route path="/login">
-            <Login/>
+            <Login />
           </Route>
           <Route  path="/signup">
-            <Signup/>
+            <Signup />
           </Route>
           <Route path="*">
             <Redirect to="/"/>

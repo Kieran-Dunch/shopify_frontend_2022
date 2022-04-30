@@ -32,11 +32,11 @@ export default function Login() {
           onChange={(e) => setPassword(e.target.value)}
           value={password}
         />
+      </label>
         <button className="btn">
           Login
         </button>
         { error && <p>{error}</p>}
-      </label>
     </form>
   )
 }
