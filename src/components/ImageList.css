@@ -2,16 +2,15 @@
   overflow: hidden;
   background: #f4f4f4;
   margin: 50px auto;
-  max-width: 30%;
+  width: 375px;
   border-radius: 10px;
 }
 
 .card-image > img {
-  margin-top: 10px;
+  margin: 10px;
   height: 50%;
-  width: 94%;
+  width: 350px;
   border-radius: 10px;
-  object-fit: cover;
 }
 
 .card-image h3 {
@@ -22,7 +21,8 @@
 .image-list {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 0%;
 }
 
 .card-image p {
@@ -76,4 +76,10 @@
   margin: 10px auto;
   width: 500px;
   background-color: rgba(51, 51, 51, 0.5);
+}
+
+@media (max-width: 800px) {
+  .image-list {
+    grid-template-columns: 1fr;
+  }
 }
