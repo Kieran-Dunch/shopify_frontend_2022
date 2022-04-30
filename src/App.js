@@ -12,9 +12,15 @@ import Footer from './components/Footer.js'
 function App() {
   return (
     <div className="App">
-      <Banner/>
-      <ImageList />
-      <Footer />
+      <header>
+        <Banner/>
+      </header>
+      <main>
+        <ImageList />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
