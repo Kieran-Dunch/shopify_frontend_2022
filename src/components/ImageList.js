@@ -33,7 +33,7 @@ export default function ImageList() {
             <div className="card-image-info">
               <div className="card-title-like">
                 <h3>{image.title}</h3>
-                <button  className="like" onClick={handleClick}>
+                <button  className="like" onClick={handleClick} aria-label="Like Button">
                   <FontAwesomeIcon icon={faHeart} />
                 </button>
               </div>
