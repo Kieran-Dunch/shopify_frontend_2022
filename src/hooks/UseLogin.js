@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useState, useEffect, useContext} from 'react'
 import { projectAuth } from '../firebase/config'
 import { UserContext } from "../context/UserContext";
 
@@ -6,7 +6,7 @@ export const useLogin = () => {
   const [ isCancelled, setIsCancelled] = useState(false)
   const [error, setError] = useState(null)
   const [isPending, setIsPending] = useState(false)
-  const { dispatch } = UserContext()
+  const { dispatch } = useContext(UserContext)
 
   const login = async ( email, password) => {
     setError(null)
