@@ -1,40 +1,40 @@
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-
-// pages
-import { Gallery } from "./pages/Gallery";
-import { Login } from "./pages/forms/Login";
-import { Signup } from "./pages/forms/Signup"
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 
 // components
-import Banner from "./components/Banner.js"
-import ImageList from "./components/ImageList.js";
 import Footer from './components/Footer.js'
 
+// pages
+import  Gallery  from "./pages/Gallery";
+import  Login  from "./pages/forms/Login";
+import  Signup  from "./pages/forms/Signup"
+import Home from "./pages/Home"
 
 
 function App() {
   return (
     <div className="App">
-      <Banner/>
-      <ImageList />
-      <Footer />
+
       <BrowserRouter>
-      <Switch>
-        <Route exact path="/">
-          {/* <Home/> */}
-        </Route>
-        <Route exact path="/Gallery">
-          <Gallery/>
-        </Route>
-        <Route path="/Login">
-          <Login/>
-        </Route>
-        <Route  path="/Signup">
-          <Signup/>
-        </Route>
-      </Switch>
+        <Switch>
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route path="/gallery">
+            <Gallery/>
+          </Route>
+          <Route path="/login">
+            <Login/>
+          </Route>
+          <Route  path="/signup">
+            <Signup/>
+          </Route>
+          <Route path="*">
+            <Redirect to="/"/>
+          </Route>
+        </Switch>
       </BrowserRouter>
+    <Footer />
     </div>
   );
 }
