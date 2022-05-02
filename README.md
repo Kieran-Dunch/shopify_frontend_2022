@@ -2,7 +2,7 @@
 
 The Shopify Frontend Challenge was a lot of fun to do! Here's a loft of features I built into the App:
 - Responsive Design
-- Designed with HTML Accessibility 
+- Designed with HTML Accessibility in mind
 - Fetches directly from NASA's Picture of the Day API to display photographs and description directly in browser
 - Loading state
 - a 'like' button that can be liked and unliked!
